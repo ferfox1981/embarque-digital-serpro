@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>FORM</title>
+<script>
+   
+    function alerta() {
+ 
+        loginForm = document.getElementById("loginForm");
+        alert(loginForm.outerHTML)
+        alert(loginForm[0].value)
+        alert(loginForm[1].value)
+ 
+    }
+ 
+  </script>
+</head>
+<body>
+    <p>Teste</p>
+<form id="loginForm">
+
+    <label for="fname">Nome:</label><br>
+ 
+    <input type="text" id="fname" name="fname" value="João"><br>
+ 
+ 
+    <label for="lname">Sobrenome:</label><br>
+ 
+ 
+    <input type="text" id="lname" name="lname" value="Silva"><br><br>
+ 
+ 
+    <input type="submit" value="Enviar" onclick="alerta()">
+
+ 
+  </form>
+</body>
+</html>
